@@ -45,12 +45,12 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 		),
 		
 	    'jquery_cnd' => array(
-			'active'			=> false,
+			'active'			=> false, // <<<<<
 			'host'				=> 'google',					// for internal use
 			'note'				=> 'TODO',						// for internal use
 			'conditional_tags'	=> array(),
 			'type'				=> 'script',
-			'handle'			=> 'jquery_cdn',
+			'handle'			=> 'jquery_cnd',
 			'src'				=> '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
 			'deps'				=> array(),
 			'ver'				=> 'google_2.1.1',
@@ -66,7 +66,7 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 			'type'				=> 'script',
 			'handle'			=> 'bootstrap_js',
 			'src'				=> '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js',
-			'deps'				=> array('jquery_cdn'),
+			'deps'				=> array('jquery'),
 			'ver'				=> 'maxcdn_3.2.0',
 		//	'media'				=> NULL,
 			'in_footer'			=> true,
@@ -88,14 +88,14 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 		
 	    'team_groove_css' => array(
 			'active'			=> true,
-			'host'				=> 'theme',					// for internal use
+			'host'				=> 'tg theme',					// for internal use
 			'note'				=> 'TODO',						// for internal use
 			'conditional_tags'	=> array(),
 			'type'				=> 'style',
-			'handle'			=> 'child_css',
+			'handle'			=> 'team_groove_css',
 			'src'				=> get_stylesheet_directory_uri() . '/setup/assets/css/child-custom.css',
 			'deps'				=> array('bootstrap_css', 'fa_css'),
-			'ver'				=> 'child_0.0.1',
+			'ver'				=> 'tg_0.0.1',
 			'media'				=> 'all',	// media is required for type: style
 		//	'in_footer'			=>	NULL,	// in_footer is required for type: script - both are listed for consistency / convenience
 		),

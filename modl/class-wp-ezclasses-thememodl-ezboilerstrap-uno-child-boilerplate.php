@@ -1,10 +1,10 @@
 <?php
 /**
- * TODO.
+ * Theme Modl - This is where all the magic happens.
  *
- * TODO
+ * The vues look to the modl for necessary details. Note: This is just an example. Your base modl might be different (which is kinda the whole point).
  *
- * @package WP ezBoilerStrap
+ * @package WPezBoilerStrap
  * @since 0.5.0
  * @author Mark Simchock
  * @license TODO

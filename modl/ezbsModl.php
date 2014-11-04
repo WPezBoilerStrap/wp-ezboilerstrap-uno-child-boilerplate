@@ -4,7 +4,7 @@
  *
  * This class supports developers and facilitate their ability to develop a boilerplate foundation that remains flexible and extendable.  
  *
- * @package WP ezBoilerStrap
+ * @package WPezBoilerStrap
  * @since 0.5.0
  * @author Mark Simchock
  * @license TODO

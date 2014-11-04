@@ -1,6 +1,6 @@
 <?php
 /**
- * Vars that are traditionally GLOBALS but now wrapped in a less vunerable class and are "read only". They are static to make them that much easier to "get". 
+ * Vars that are traditionally (PHP) GLOBALS but now wrapped in a less vunerable class and are "read only". They are static to make them that much easier to get. 
  *
  * Note: ezbsGlobals.php is the only WP ezBoilerStrap class that can NOT have a child suffix. It's where we get the child slug suffix so we can not use what we do not yet know. 
  *
@@ -8,7 +8,7 @@
  *
  * LICENSE: TODO
  *
- * @package WP ezBoilerStrap
+ * @package WPezBoilerStrap
  * @author Mark Simchock <mark.simchock@alchemyunited.com>
  * @since 0.5.0
  * @license TODO
@@ -70,9 +70,16 @@ if (! class_exists('Class_WP_ezBoilerStrap_Globals')) {
     // functions.php > other (as in none of the above)
 	static public $str_oth_working				= 'uno-child';
 	static public $str_oth_name					= '';
-	static public $bool_oth						= true;		
-
+	static public $bool_oth						= true;	
 	
+	/**
+	 * * * IMPORTANT * * * 
+	 *
+	 * You can decide to use the same working/ folder so ez_gtp (get_template_part) will fall back to the parent. If ya want. In that case you can then 
+	 * also add a name "slug" so you child files have a unique and ez to identify name. 
+	 */
+
+		
 	/**
 	 * Note: We're not using the construct other than to get "global" properties defined in the master parent
 	 */
