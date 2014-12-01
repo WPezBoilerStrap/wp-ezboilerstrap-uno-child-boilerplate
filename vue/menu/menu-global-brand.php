@@ -29,7 +29,7 @@ if ( !defined('ABSPATH') ) {
 
 $arr_menu_global_brand = ezbsModl::get( basename(__FILE__, '.php') ); 
 
-if ( WP_ezMethods::ez_true($arr_menu_global_brand['active']) ){	
+if ( WPezHelpers::ez_true($arr_menu_global_brand['active']) ){	
 
 	echo '<a href="' . sanitize_text_field($arr_menu_global_brand['markup']['a_href']) . '" title="' . sanitize_text_field($arr_menu_global_brand['markup']['a_title']) . '" class="' . sanitize_text_field($arr_menu_global_brand['markup']['title_class']) . '">' . sanitize_text_field($arr_menu_global_brand['markup']['title']) . '</a>';
 

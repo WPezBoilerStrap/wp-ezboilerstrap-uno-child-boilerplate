@@ -66,6 +66,11 @@ if (! class_exists('Class_WP_ezBoilerStrap_Globals')) {
 	static public $str_re_working				= 'uno-child';
 	static public $str_re_name					= '';
 	static public $bool_re						= true;	
+	
+    // functions.php > document ready 
+	static public $str_dr_working				= 'uno';
+	static public $str_dr_name					= '';
+	static public $bool_dr						= true;		
 
     // functions.php > other (as in none of the above)
 	static public $str_oth_working				= 'uno-child';
@@ -87,7 +92,7 @@ if (! class_exists('Class_WP_ezBoilerStrap_Globals')) {
 	  parent::__construct(); 
 	}
 		
-	public function ezc_init(){
+	public function ez__construct(){
 			//$this->ezbs_globals_init();
 	}
 		

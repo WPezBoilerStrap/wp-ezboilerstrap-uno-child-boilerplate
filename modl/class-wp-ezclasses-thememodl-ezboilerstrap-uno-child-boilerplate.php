@@ -23,7 +23,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 			parent::__construct();
 		} 
 		
-		public function ezc_init(){
+		public function ez__construct(){
 		
 		}
 				  
@@ -245,7 +245,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   */
 		  protected function ezm_breadcrumbs(){
 		  
-		    $obj_ezc_themeui_breadcrumbs = Class_WP_ezClasses_ThemeUI_Breadcrumbs_1::ezc_get_instance();
+		    $obj_ezc_themeui_breadcrumbs = Class_WP_ezClasses_ThemeUI_Breadcrumbs_1::ez_new();
 			
 			/**
 			 * note: if we don't pass in the ezm_breadcrumbs_args() then that class has defaults. as a matter
@@ -920,7 +920,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   */
 		  protected function ezm_index_next_prev_control(){
 		  
-		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ezc_get_instance();
+		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ez_new();
 			
 			// note: we could pass in cusotmization args but we'll stick with the class' defaults. at least for now. 
 			$arr_ret = $obj_ezc_themeui_next_prev->next_prev( self::ezm_index_next_prev_control_args() ); 
@@ -963,7 +963,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   */
 		  protected function ezm_index_sort_control(){
 		  
-		    $obj_ezc_themeui_sort = Class_WP_ezClasses_ThemeUI_Sort_Control_1::ezc_get_instance();
+		    $obj_ezc_themeui_sort = Class_WP_ezClasses_ThemeUI_Sort_Control_1::ez_new();
 			
 			// 
 			$arr_ret = $obj_ezc_themeui_sort->sort(self::ezm_index_sort_control_args()); 
@@ -1246,7 +1246,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   */
 		  protected function ezm_single_next_prev_control(){
 		  
-		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ezc_get_instance();
+		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ez_new();
 			
 			// We'll use the same defaults defined above
 			$arr_ret = $obj_ezc_themeui_next_prev->next_prev_single(self::ezm_index_next_prev_control_args()); 

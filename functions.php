@@ -11,7 +11,7 @@ if ( !class_exists('WP_ezBoilerStrap_Child_Boilerplate') ){
 	public function ezbs_uno_child_boilerplate_setup(){
 	
 	  if ( ! class_exists('ezbsGlobals') ){
-	    include_once('/setup/class-wp-ezboilerstrap-globals.php');
+	    include_once('setup/class-wp-ezboilerstrap-globals.php');
 	  }
 	
 	  /**

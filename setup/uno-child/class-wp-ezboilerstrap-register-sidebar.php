@@ -381,7 +381,7 @@ if (! class_exists('Class_WP_ezBoilerStrap_Register_Sidebar') ) {
 
     public function ezbs_register_sizebar(){
   
-      $obj_ezc_register_sizebar = Class_WP_ezClasses_Theme_Register_Sidebar_1::ezc_get_instance();
+      $obj_ezc_register_sizebar = Class_WP_ezClasses_Theme_Register_Sidebar_1::ez_new();
   
       $arr_args = array(
         'base'	 	 => $this->ezbs_register_sidebar_base(),

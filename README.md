@@ -5,9 +5,18 @@
 
 https://github.com/WPezBoilerStrap
 
-fyi: Look for the Getting Start if you're not familar with this architecture.
+fyi: Look for the Org's Getting Started if you're not familar with this forward-thinking architecture.
 
-===============================================================================================
+=======================================================================================
+
+####WPezBoilerStrap: Getting Started
+- https://github.com/WPezBoilerStrap/wp-ezboilerstrap-docs-getting-started
+
+
+#### See also: WPezClasses - Getting Started
+- https://github.com/WPezClasses/wp-ezclasses-docs-getting-started
+
+=======================================================================================
 
 ####The TODOs
 
