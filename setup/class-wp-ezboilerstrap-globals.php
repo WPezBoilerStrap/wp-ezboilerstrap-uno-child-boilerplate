@@ -68,7 +68,7 @@ if (! class_exists('Class_WP_ezBoilerStrap_Globals')) {
 	static public $bool_re						= true;	
 	
     // functions.php > document ready 
-	static public $str_dr_working				= 'uno';
+	static public $str_dr_working				= 'uno-child';
 	static public $str_dr_name					= '';
 	static public $bool_dr						= true;		
 
