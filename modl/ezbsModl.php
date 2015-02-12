@@ -37,7 +37,7 @@ if ( ! class_exists('ezbsModl')) {
     parent::__construct();
   } 
 		
-  public function ezc_init($obj_ezbs_options = NULL){
+  public function ez__construct($obj_ezbs_options = NULL){
   }
 		
 		/**
@@ -45,7 +45,7 @@ if ( ! class_exists('ezbsModl')) {
 		 * 
 		 * This is also where you can alter any thing. Kinda like a traditional WP filter. Kinda. 
 		 */ 
-		protected function modl_filter( $str_modl_2, $arr_args){
+		protected static function modl_filter( $str_modl_2, $arr_args){
 		
 		  return $arr_args;
 		}
@@ -55,7 +55,7 @@ if ( ! class_exists('ezbsModl')) {
 		 * 
 		 * Don't muck with this. The future of the free world depends on it working right :)
 		 */
-		static public function get( $str_modl = '' ){
+		public static function get( $str_modl = '' ){
 		
 		  if ( empty($str_modl) || ! is_string($str_modl) ){
 		    return false;

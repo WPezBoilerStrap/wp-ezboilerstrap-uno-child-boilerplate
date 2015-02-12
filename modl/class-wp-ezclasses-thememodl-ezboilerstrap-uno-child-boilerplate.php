@@ -19,7 +19,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
   class Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate extends Class_WP_ezClasses_Master_Singleton {	
 	
 
-		protected function __construct() {
+		protected static function __construct() {
 			parent::__construct();
 		} 
 		
@@ -30,7 +30,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_global(){
+		  protected static function ezm_menu_global(){
 		    
 			return array(
 			
@@ -62,7 +62,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */		  
-		  protected function ezm_menu_global_menu_args(){
+		  protected static function ezm_menu_global_menu_args(){
 		  
 		    return array(
 			  'active' => true,
@@ -82,7 +82,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_global_brand(){
+		  protected static function ezm_menu_global_brand(){
 			  
 		    return array(
 			
@@ -102,7 +102,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		   protected function ezm_menu_main(){
+		   protected static function ezm_menu_main(){
 		  
             return array(
 			
@@ -133,7 +133,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_main_menu_args(){
+		  protected static function ezm_menu_main_menu_args(){
 		  
 		    return array(
 			    'active' => true,
@@ -153,7 +153,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_main_brand(){
+		  protected static function ezm_menu_main_brand(){
 		  
 		    return array(
 			
@@ -171,7 +171,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_footer(){
+		  protected static function ezm_menu_footer(){
 		
 			return array(
 			
@@ -203,7 +203,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_footer_menu_args(){
+		  protected static function ezm_menu_footer_menu_args(){
 		  
 		    return array(
 			    'active' => true,
@@ -224,7 +224,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_menu_footer_brand(){
+		  protected static function ezm_menu_footer_brand(){
 			
 		    return array(
 			
@@ -243,7 +243,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   * Breadcrumbs control via WPezClasses > ThemeUI > Breadcrumbs_1
 		   */
-		  protected function ezm_breadcrumbs(){
+		  protected static function ezm_breadcrumbs(){
 		  
 		    $obj_ezc_themeui_breadcrumbs = Class_WP_ezClasses_ThemeUI_Breadcrumbs_1::ez_new();
 			
@@ -269,7 +269,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   * Defaults for the breadcrumbs control
 		   */
-		  protected function ezm_breadcrumbs_args(){
+		  protected static function ezm_breadcrumbs_args(){
 		  
 		    return array(
 			  'home' 				=> '<span class="icon-home"></span>',   // FYI - text / string (e.g., 'Home') is also allowed for breadcrumbs-home
@@ -290,7 +290,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header(){
+		  protected static function ezm_header(){
 
 		    return array(
 			  'active' => true,
@@ -329,7 +329,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_head(){			  
+		  protected static function ezm_head(){			  
 		    
 			return array(
 			
@@ -341,7 +341,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_parent(){			  
+		  protected static function ezm_header_parent(){			  
 		    
 			return array(
 			  'active' => true,
@@ -383,7 +383,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_above(){
+		  protected static function ezm_header_above(){
 			  
 		    return array(
 			
@@ -429,7 +429,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_main_wrap(){
+		  protected static function ezm_header_main_wrap(){
 		    
 			return array(
 			
@@ -460,7 +460,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_main(){
+		  protected static function ezm_header_main(){
 			   
 		    return array(
 			
@@ -483,7 +483,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_main_logo(){
+		  protected static function ezm_header_main_logo(){
 			  
 		    return array(
 			
@@ -502,7 +502,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_header_below(){ 
+		  protected static function ezm_header_below(){ 
 		    
 			return array(
 			
@@ -548,7 +548,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer(){
+		  protected static function ezm_footer(){
 		    
 			return array(
 			
@@ -567,7 +567,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer_parent(){
+		  protected static function ezm_footer_parent(){
 		  
 		    return array(
 			
@@ -612,7 +612,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer_above(){
+		  protected static function ezm_footer_above(){
 		  
 		    return array(
 			
@@ -658,7 +658,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer_main(){
+		  protected static function ezm_footer_main(){
 
 		    return array(
 			
@@ -705,7 +705,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer_bottom(){
+		  protected static function ezm_footer_bottom(){
 
 		    return array(
 			
@@ -725,7 +725,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_footer_below(){
+		  protected static function ezm_footer_below(){
 		  
 		    return array(
 			
@@ -774,7 +774,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   * For index.php
 		   */
-		  protected function ezm_index(){
+		  protected static function ezm_index(){
 			 
 			return array(
 			
@@ -794,7 +794,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_parent(){
+		  protected static function ezm_index_parent(){
 
 			return array(
 			
@@ -857,7 +857,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_content_center(){
+		  protected static function ezm_index_content_center(){
 		  
 			return array(
 			
@@ -918,7 +918,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_next_prev_control(){
+		  protected static function ezm_index_next_prev_control(){
 		  
 		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ez_new();
 			
@@ -939,7 +939,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  		  /**
 		   *
 		   */
-		  protected function ezm_index_next_prev_control_args(){
+		  protected static function ezm_index_next_prev_control_args(){
 		  
 		    return array(
 			  'ul_class' 			=> 'ezbs-pager',
@@ -961,7 +961,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_sort_control(){
+		  protected static function ezm_index_sort_control(){
 		  
 		    $obj_ezc_themeui_sort = Class_WP_ezClasses_ThemeUI_Sort_Control_1::ez_new();
 			
@@ -982,7 +982,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_sort_control_args(){
+		  protected static function ezm_index_sort_control_args(){
 		  
 		    $arr_defaults_labels = array(
 			 
@@ -1019,7 +1019,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_index_content_center_have_posts(){	
+		  protected static function ezm_index_content_center_have_posts(){	
 			  
 			return array(
 			
@@ -1060,7 +1060,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   * Working but a TODO
 		   */
-		  protected function ezm_index_post_meta_above(){	
+		  protected static function ezm_index_post_meta_above(){	
 			  
 			return array(
 			
@@ -1076,7 +1076,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   * Working but a TODO
 		   */
-		  protected function ezm_index_post_meta_below(){	
+		  protected static function ezm_index_post_meta_below(){	
 			  
 			return array(
 			
@@ -1099,7 +1099,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   /**
 		    *
 			*/
-		   protected function ezm_single(){
+		   protected static function ezm_single(){
 		   
 		     return array(
 			 
@@ -1119,7 +1119,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   /**
 		    *
 			*/
-		   protected function ezm_single_parent(){
+		   protected static function ezm_single_parent(){
 		   
 		     return array(
 			 
@@ -1163,7 +1163,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_single_content_center_wrap(){
+		  protected static function ezm_single_content_center_wrap(){
 			  
 			return array(
 			
@@ -1199,7 +1199,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_single_content_center(){
+		  protected static function ezm_single_content_center(){
 			  
 			return array(
 			
@@ -1244,7 +1244,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_single_next_prev_control(){
+		  protected static function ezm_single_next_prev_control(){
 		  
 		    $obj_ezc_themeui_next_prev = Class_WP_ezClasses_ThemeUI_Next_Prev_Control_1::ez_new();
 			
@@ -1272,7 +1272,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   * = = = = = Start: Archive = = = = =
 		   */
 		   
-		  protected function ezm_archive_header(){
+		  protected static function ezm_archive_header(){
 
 		    $arr_args = array(
 			
@@ -1305,7 +1305,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_archive_content_above_above(){
+		  protected static function ezm_archive_content_above_above(){
 
 		    $arr_args = array(
 			
@@ -1332,7 +1332,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_archive_content_above_below(){
+		  protected static function ezm_archive_content_above_below(){
 
 		    $arr_args = array(
 			
@@ -1359,7 +1359,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_archive_content_below_above(){
+		  protected static function ezm_archive_content_below_above(){
 
 		    $arr_args = array(
 			
@@ -1386,7 +1386,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_archive_content_below_below(){
+		  protected static function ezm_archive_content_below_below(){
 
 		    $arr_args = array(
 			
@@ -1424,7 +1424,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page(){		 
+		  protected static function ezm_page(){		 
 			 
 			return array(
 			
@@ -1445,7 +1445,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_parent(){		  
+		  protected static function ezm_page_parent(){		  
 			  
 			return array(
 			
@@ -1495,7 +1495,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_content_center_wrap(){
+		  protected static function ezm_page_content_center_wrap(){
 			  
 			return array(
 			
@@ -1532,7 +1532,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_content_center(){
+		  protected static function ezm_page_content_center(){
 			
 			return array(
 			
@@ -1566,7 +1566,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_home(){	
+		  protected static function ezm_page_home(){	
 			 
 			return array(
 			
@@ -1586,7 +1586,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_home_parent(){			  
+		  protected static function ezm_page_home_parent(){			  
 			
 			return array(
 			
@@ -1628,7 +1628,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_page_home_content_center(){				
+		  protected static function ezm_page_home_content_center(){				
 			
 			return array(
 			
@@ -1683,7 +1683,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_search(){	
+		  protected static function ezm_search(){	
 			 
 			return array(
 			
@@ -1704,7 +1704,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_search_parent(){		  
+		  protected static function ezm_search_parent(){		  
 			  
 			return array(
 			
@@ -1755,7 +1755,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		   /**
 		    *
 			*/
-		   protected function ezm_search_content_center(){		  
+		   protected static function ezm_search_content_center(){		  
 			  
 			return array(
 			
@@ -1821,7 +1821,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 			  );
 		  }
 		  
-		  protected function ezm_search_title(){
+		  protected static function ezm_search_title(){
 		  
 		    $arr_args = array(
 			
@@ -1860,7 +1860,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_title_above(){	
+		  protected static function ezm_title_above(){	
 		  
 			return array(
 			
@@ -1882,7 +1882,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_title_below(){	
+		  protected static function ezm_title_below(){	
 		  
 			return array(
 			
@@ -1903,7 +1903,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_content_above(){
+		  protected static function ezm_content_above(){
 		  
 			return array(
 			
@@ -1925,7 +1925,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_content_below(){
+		  protected static function ezm_content_below(){
 		  
 			return array(
 			
@@ -1947,7 +1947,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_aside_left_wrap(){
+		  protected static function ezm_aside_left_wrap(){
 		  
 			return array(
 			
@@ -1971,7 +1971,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_aside_left_ds(){		  
+		  protected static function ezm_aside_left_ds(){		  
 			  
 			return array(
 			
@@ -2013,7 +2013,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_aside_right_wrap(){		  
+		  protected static function ezm_aside_right_wrap(){		  
 			  
 			return array(
 			
@@ -2037,7 +2037,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_aside_right_ds(){
+		  protected static function ezm_aside_right_ds(){
 		  
 			return array(
 			
@@ -2088,7 +2088,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_404(){
+		  protected static function ezm_404(){
 			 
 			return array(
 			
@@ -2108,7 +2108,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_404_parent(){
+		  protected static function ezm_404_parent(){
 		  
 			return array(
 			
@@ -2149,7 +2149,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_404_content_center_wrap(){
+		  protected static function ezm_404_content_center_wrap(){
 		  
 			return array(
 			
@@ -2194,7 +2194,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_404_content_center(){
+		  protected static function ezm_404_content_center(){
 		  
 			return array(
 			
@@ -2234,7 +2234,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
 		  /**
 		   *
 		   */
-		  protected function ezm_searchform_custom(){			 
+		  protected static function ezm_searchform_custom(){			 
 			
 			return array(
 			  
