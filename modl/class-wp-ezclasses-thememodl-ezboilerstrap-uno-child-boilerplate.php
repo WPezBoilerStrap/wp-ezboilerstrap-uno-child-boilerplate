@@ -19,7 +19,7 @@ if (! class_exists('Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate
   class Class_WP_ezClasses_ThemeModl_ezBoilerStrap_Child_Boilerplate extends Class_WP_ezClasses_Master_Singleton {	
 	
 
-		protected static function __construct() {
+		protected function __construct() {
 			parent::__construct();
 		} 
 		

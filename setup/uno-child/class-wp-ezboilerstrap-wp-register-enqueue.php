@@ -30,6 +30,34 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 		//	'in_footer'			=>	NULL,	// in_footer is required for type: script - both are listed for consistency / convenience
 		),
 		
+	    'jquery' 		=> array(
+			'active'			=> true, 
+			'host'				=> 'wp local',					// for internal use
+			'note'				=> 'TODO',						// for internal use
+			'conditional_tags'	=> array(),
+			'type'				=> 'wp-script',
+			'handle'			=> 'jquery',
+			'src'				=> 'n/a',
+			'deps'				=> array(),
+			'ver'				=> 'n/a',
+		//	'media'				=> 'all',	// media is required for type: style
+			'in_footer'			=> 'n/a',	// in_footer is required for type: script - both are listed for consistency / convenience
+		),
+		
+	    'font_awesome_css' => array(
+			'active'			=> true,
+			'host'				=> 'maxcdn',					// for internal use
+			'note'				=> 'TODO',						// for internal use
+			'conditional_tags'	=> array(),
+			'type'				=> 'style',
+			'handle'			=> 'fa_css',
+			'src'				=> '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
+			'deps'				=> array(),
+			'ver'				=> 'maxcdn_4.2.0',
+			'media'				=> 'all',	// media is required for type: style
+		//	'in_footer'			=>	NULL,	// in_footer is required for type: script - both are listed for consistency / convenience
+		),		
+		
 	    'bootstrap_css' => array(
 			'active'			=> true,
 			'host'				=> 'maxcdn',					// for internal use
@@ -42,20 +70,6 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 			'ver'				=> 'maxcdn3.2.0',
 			'media'				=> 'all',	// media is required for type: style
 		//	'in_footer'			=>	NULL,	// in_footer is required for type: script - both are listed for consistency / convenience
-		),
-		
-	    'jquery_cnd' => array(
-			'active'			=> false, // <<<<<
-			'host'				=> 'google',					// for internal use
-			'note'				=> 'TODO',						// for internal use
-			'conditional_tags'	=> array(),
-			'type'				=> 'script',
-			'handle'			=> 'jquery_cnd',
-			'src'				=> '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
-			'deps'				=> array(),
-			'ver'				=> 'google_2.1.1',
-		//	'media'				=> 'all',	// media is required for type: style
-			'in_footer'			=>	true,	// in_footer is required for type: script - both are listed for consistency / convenience
 		),
 		
 		'bootstrap_js' => array(	
@@ -71,28 +85,14 @@ if (! class_exists('Class_WP_ezBoilerStrap_WP_Register_Enqueue') ) {
 		//	'media'				=> NULL,
 			'in_footer'			=> true,
 		),
-		
-	    'font_awesome_css' => array(
-			'active'			=> true,
-			'host'				=> 'maxcdn',					// for internal use
-			'note'				=> 'TODO',						// for internal use
-			'conditional_tags'	=> array(),
-			'type'				=> 'style',
-			'handle'			=> 'fa_css',
-			'src'				=> '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css',
-			'deps'				=> array(),
-			'ver'				=> 'maxcdn_4.2.0',
-			'media'				=> 'all',	// media is required for type: style
-		//	'in_footer'			=>	NULL,	// in_footer is required for type: script - both are listed for consistency / convenience
-		),
-		
-	    'team_groove_css' => array(
+
+	    'child_css' => array(
 			'active'			=> true,
 			'host'				=> 'tg theme',					// for internal use
 			'note'				=> 'TODO',						// for internal use
 			'conditional_tags'	=> array(),
 			'type'				=> 'style',
-			'handle'			=> 'team_groove_css',
+			'handle'			=> 'child_css',
 			'src'				=> get_stylesheet_directory_uri() . '/setup/assets/css/child-custom.css',
 			'deps'				=> array('bootstrap_css', 'fa_css'),
 			'ver'				=> 'tg_0.0.1',
